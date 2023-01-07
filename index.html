@@ -1,19 +1,26 @@
 <html>
 
   <body>
-    <h1>Skyler Coleman</h1>
 
-    <p>Welcome to my website!</p>
-    <p>I am a third year computer science student at the Univeristy of Georgia. I have an empahsis in cybersecurity and a minor in korean. <br>
-      I have a huge passion for software development and will utilize this website to showcase personal projects that I am working on.</p>
-    <img src="Photos/Me.jpeg"alt="A picture of me!">
-
+    <div class="tab">
+      <button class="tablinks" onclick="clickHandle(event, 'Home')">Home</button>
+    </div>
+    
     <div class="tab">
       <button class="tablinks" onclick="clickHandle(event, 'About Me')">About Me</button>
     </div>
 
     <div id="About Me" class="tabcontent">
       <h3>ALL about Me</h3>
+    </div>
+
+     <div id="Home" class="tabcontent">
+        <h1>Skyler Coleman</h1>
+
+    <p>Welcome to my website!</p>
+    <p>I am a third year computer science student at the Univeristy of Georgia. I have an empahsis in cybersecurity and a minor in korean. <br>
+      I have a huge passion for software development and will utilize this website to showcase personal projects that I am working on.</p>
+    <img src="Photos/Me.jpeg"alt="A picture of me!">
     </div>
 
     <script>
