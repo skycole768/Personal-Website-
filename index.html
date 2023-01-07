@@ -2,12 +2,18 @@
 
   <body>
     <h1>Skyler Coleman</h1>
+
+    <p>Welcome to my website!</p>
+    <p>I am a third year computer science student at the Univeristy of Georgia. I have an empahsis in cybersecurity and a minor in korean. <br>
+      I have a huge passion for software development and will utilize this website to showcase personal projects that I am working on.</p>
+    <img src="Photos/Me.jpeg"alt="A picture of me!">
+
     <div class="tab">
       <button class="tablinks" onclick="clickHandle(event, 'About Me')">About Me</button>
     </div>
 
     <div id="About Me" class="tabcontent">
-      <h1>ALL about Me</h1>
+      <h3>ALL about Me</h3>
     </div>
 
     <script>
@@ -15,23 +21,19 @@
 	  var i, tabcontent, tablinks;
 
 	  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+	  for (i = 0; i < tabcontent.length; i++) {
+	      tabcontent[i].style.display = "none";
+	  }
 
 	  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+	  for (i = 0; i < tablinks.length; i++) {
+	      tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
 	  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-	  
-	      <p>Welcome to my website!</p>
-  <p>I am a third year computer science student at the Univeristy of Georgia. I have an empahsis in cybersecurity and a minor in korean. <br>
-  I have a huge passion for software development and will utilize this website to showcase personal projects that I am working on.</p>
-  <img src="Photos/Me.jpeg"alt="A picture of me!">
-</body>
+	  evt.currentTarget.className += " active";
+      }
+    </script>
+    
+  </body>
 
 </html>
