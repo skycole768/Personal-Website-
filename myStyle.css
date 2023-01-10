@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: powderblue;
+  background-color: lightblue;
 }
 h3 {
-  color: blue;
+  color: green;
 }
 
