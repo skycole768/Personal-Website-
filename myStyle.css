@@ -9,6 +9,12 @@ body {
   line-height: 1.618em;
 }
 
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 h3 {
   color: #000000;
 }
