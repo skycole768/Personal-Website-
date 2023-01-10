@@ -26,3 +26,8 @@ h1 {
   height: 14.75rem;
 }
 
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
