@@ -40,10 +40,10 @@
 
 	  tablinks = document.getElementsByClassName("tablinks");
 	  for (i = 0; i < tablinks.length; i++) {
-	      tablinks[i].className = tablinks[i].className.replace(" black", "");
+	      tablinks[i].className = tablinks[i].className.replace(" active", "");
 	  }
 	  document.getElementById(tabName).style.display = "block";
-	  evt.currentTarget.className += " black";
+	  evt.currentTarget.className += " active";
       }
     </script>
 	  
