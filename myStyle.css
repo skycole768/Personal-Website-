@@ -16,11 +16,8 @@ h1 {
 
 .tab {
   overflow: hidden;
-  position: relative;
-  margin: 3rem 0;
   border: 1px solid #ccc;
   background-color: #F5F5DC;
-  height: 14.75rem;
 }
 
 .tab button {
