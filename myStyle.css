@@ -6,7 +6,7 @@
 body {
   font-family: "Times New Roman";
   background: #B2AC88;
-  color: #f5f7f7;
+  color: #6F7259;
   line-height: 1.618em;
 }
 
@@ -46,7 +46,7 @@ h1 {
   max-width: 50rem;
   width: 100%;
   margin: 0 auto;
-  background-color: #6F7259;
+  background-color: #f5f7f7;
 }
 
 .tabcontent {
