@@ -16,6 +16,7 @@ h1 {
 
 .landscape { 
    display: block;
+   right: 0px;
    position: absolute;
    bottom: 0px; 
 }
