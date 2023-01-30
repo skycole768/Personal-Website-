@@ -20,6 +20,10 @@ h1 {
    position: absolute;
    bottom: 0px; 
 }
+
+.middle{
+ font-family: Kaushan Script, Times, serif;     
+}
 .me {
     border-radius: 100%;
 }
