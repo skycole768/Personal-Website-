@@ -1,0 +1,32 @@
+body {
+margin: 0;
+text-align: center;
+}
+
+h1 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.sun {
+    float: right;
+    display: block;
+}
+
+.me {
+           border-radius: 100%;
+}
+.top {
+background-color: #BCB88A;
+font-family: Pacifico, Times, serif;
+padding-top: 25px;
+}
+
+.middle{
+      padding: 25px 85px 85px 70px;
+background-color: #FEFBEA;
+}
+
+.bottom {
+    background-color: #BCB88A;
+}
