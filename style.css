@@ -29,13 +29,20 @@ h1 {
 }
 
 a:link {
+     text-decoration: none;
      color: #C4A484;
 }
 a:visted {
+     text-decoration: none;
      color; #57747b;
 }
 a:hover {
- color: #7f5112;
+     text-decoration: none;
+     color: #7f5112;
+}
+
+a:active {
+     text-decoration: none;
 }
 
 .top {
