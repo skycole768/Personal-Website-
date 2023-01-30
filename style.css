@@ -25,6 +25,7 @@ h1 {
 
 .middle{
  font-family: Unna, Times, serif;     
+ color:
 }
 .me {
     border-radius: 100%;
@@ -58,6 +59,7 @@ a:active {
 
 .middle{
       padding: 25px 85px 85px 70px;
+      color:  #4d8c57;
       background-color: #FEFBEA;
 }
 
