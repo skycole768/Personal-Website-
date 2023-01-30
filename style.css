@@ -9,9 +9,9 @@ h1 {
 }
 
 .sun {
-    padding-left: 10000px;
-    float: right;
-    display: block;
+     position: absolute;
+     right: -20px;
+     top: -35px;
 }
 
 .me {
