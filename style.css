@@ -9,8 +9,7 @@ h1 {
 }
 
 .sun {
-     order: -1;
-    float: right;
+    text-align: right;
     display: block;
 }
 
