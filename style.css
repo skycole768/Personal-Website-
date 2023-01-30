@@ -27,6 +27,17 @@ h1 {
 .me {
     border-radius: 100%;
 }
+
+a:link {
+     color: #C4A484;
+}
+a:visted {
+     color; #57747b;
+}
+a:hover {
+ color: #7f5112;
+}
+
 .top {
      background-color: #BCB88A;
      font-family: Pacifico, Times, serif;
