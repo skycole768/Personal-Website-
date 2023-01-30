@@ -1,6 +1,6 @@
 body {
-margin: 0;
-text-align: center;
+     margin: 0;
+     text-align: center;
 }
 
 h1 {
@@ -9,23 +9,24 @@ h1 {
 }
 
 .sun {
-    padding-left: 500px;
+    padding-left: 1000px;
     float: right;
     display: block;
 }
 
 .me {
-           border-radius: 100%;
+    border-radius: 100%;
+    padding-bottom: 150px;
 }
 .top {
-background-color: #BCB88A;
-font-family: Pacifico, Times, serif;
-padding-top: 25px;
+     background-color: #BCB88A;
+     font-family: Pacifico, Times, serif;
+     padding-top: 25px;
 }
 
 .middle{
       padding: 25px 85px 85px 70px;
-background-color: #FEFBEA;
+      background-color: #FEFBEA;
 }
 
 .bottom {
