@@ -9,8 +9,8 @@ h1 {
 }
 
 .sun {
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-left: 200px;
+    float: right;
     display: block;
 }
 
