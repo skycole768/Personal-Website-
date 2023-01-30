@@ -4,6 +4,8 @@ body {
 }
 
 h1 {
+    font-family: Pacifico, Times, serif;
+    color: #f9e5bc;
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
@@ -47,7 +49,7 @@ a:active {
 
 .top {
      background-color: #BCB88A;
-     font-family: Pacifico, Times, serif;
+     color: #fffef2;
      padding-top: 25px;
      position: relative;
      height: 1200px;
