@@ -25,7 +25,7 @@ h1 {
 
 .middle{
  font-family: Unna, Times, serif;     
- color:
+ color:#4d8c57;
 }
 .me {
     border-radius: 100%;
@@ -37,7 +37,7 @@ a:link {
 }
 a:visited {
      text-decoration: none;
-     color; #57747b;
+     color: #57747b;
 }
 a:hover {
      text-decoration: none;
