@@ -104,7 +104,11 @@ float: left;
    display: inline-block;
    width: 30%;
 }
-
+column1 {
+   vertical-align: top;
+   display: inline-block;
+   width: 50%;
+}
 
 .row {
 padding: 0px 150px 0px 150px;
