@@ -1,86 +1,75 @@
 body {
-   margin: 0;
-   text-align: center;
+    margin: 0;
+    text-align: center;
 }
 
 
 h1 {
-  font-family: "Pacifico", Times, serif;
-  font-size: 48px;
-  color: #f9e5bc;
- 
+   font-family: "Pacifico", Times, serif;
+   font-size: 48px;
+   color: #f9e5bc;
+   
 }
-
 
 h2 {
-   font-size: 28px;
+    font-size: 28px;
 }
-
 
 .sun {
-   position: absolute;
-   right: -20px;
-   top: -35px;
+    position: absolute;
+    right: -20px;
+    top: -35px;
 }
 
-
-.landscape {
- display: block;
- right: 0px;
- position: absolute;
- bottom: 0px;
+.landscape { 
+  display: block;
+  right: 0px;
+  position: absolute;
+  bottom: 0px; 
 }
-
 
 .me {
-  border-radius: 100%;
+   border-radius: 100%;
 }
-
 
 a:link {
-   text-decoration: none;
-   color: #C4A484;
+    text-decoration: none;
+    color: #C4A484;
 }
 a:visited {
-   text-decoration: none;
-   color: #7f5112;
+    text-decoration: none;
+    color: #7f5112;
 }
 a:hover {
-   text-decoration: none;
-   color: #30c8ee;
+    text-decoration: none;
+    color: #30c8ee;
 }
-
 
 a:active {
-   text-decoration: none;
+    text-decoration: none;
 }
-
 
 ul {
-   margin-inline: 0px;
-   list-style: none;
-   padding-inline: 0px;
+    margin-inline: 0px;
+    list-style: none;
+    padding-inline: 0px;
 }
-
-
 
 
 .top {
-   background-color: #BCB88A;
-   color: #fffef2;
-   padding-top: 25px;
-   position: relative;
- 
+    background-color: #BCB88A;
+    color: #fffef2;
+    padding-top: 25px;
+    position: relative;
+   
 }
-
 
 hr {
-   border: 3px dotted #9ACD32;
+    border: 3px dotted #9ACD32;
 }
 
-
 .end {
-   border: 3px dotted #4E3524;
+    border: 3px dotted #4E3524;
 }
 
 
@@ -88,78 +77,125 @@ hr {
 float: left;
 }
 
+.left1 {
+    float: left;
+    position: relative;
+    width: 20%;
+}
 
 .right {
-   position: relative;
+    position: relative;
 }
 
+.right1 {
+padding-left: 43%;
+width: 65%;
+}
+.right2 {
+width: 65%;
+}
 
 .java{
-   float: right;
+    float: right;
 }
-
 
 .column {
-   vertical-align: top;
-   display: inline-block;
-   width: 30%;
-}
-column1 {
-   vertical-align: top;
-   display: inline-block;
-   width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
 }
 
+.column1 {
+    vertical-align: top;
+    display: inline-block;
+}
 .row {
-padding: 0px 150px 0px 150px;
+padding: 0px 100px 0px 100px;
 }
 
-
-.rowImg {
-   position: absolute;
-   width: 80px;
+.java {
+    position: absolute;
 }
 
+.robot {
+    position: absolute;
+    float: left;
+    right: 65%;
+}
+
+#skill {
+    position: absolute;
+}
+
+dl {
+    float: right;
+    margin-block: 0px;
+}
 
 dt {
-  
-       float: left;
-       clear: left;
-       width: 100px;
-       text-align: right;
-       font-weight: bold;
-       color: #154734;
+    
+        float: left;
+        clear: left;
+        text-align: right;
+        font-weight: bold;
+        color: #154734;
 }
-
 
 dd {
-       text-align: left;
-       margin: 0 0 0 110px;
-       padding: 0 0 0.5em 0;
+        text-align: left;
+        margin: 0 0 0 110px;
+        padding: 0 0 0.5em 0;
 }
-
 
 .middle {
-    padding: 25px 100px 70px 100px;
-    margin: 10%;
-    color:  #4d8c57;
-    background-color: #FEFBEA;
-    font-family: "Unna", Times, serif;    
-   }
-
+     padding: 25px 85px 70px 85px;
+     margin: 10%;
+     color:  #4d8c57;
+     background-color: #FEFBEA;
+     font-family: "Unna", Times, serif;     
+    }
 
 .button {
-       background-color: #C4A484;
-       border: #7f5112;
-       color: white;
-       padding: 12px 28px;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 18px;
-       border-radius: 8px;
+        background-color: #C4A484; 
+        border: #7f5112;
+        color: white;
+        padding: 12px 28px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        border-radius: 8px;
+}
+.skillsList {
+    margin-inline-start: 170px;
+}
+.bottom {
+    border-style: solid;
+    border-top-color: #4E3524;
+   background-color: #BCB88A;
 }
 
+.contact {
+    background-color: #BCB88A;
+}
 
-.bottom {
-  background-color: #BCB88A;
+p {
+    font-family: "Unna", Times, serif; 
+    font-size: 28px;    
+    color: #4E3524;
+} 
+
+.card {
+    text-align: center;
+    background-color: #fffef2;
+   margin-left: 25%;
+   margin-right: 25%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+}
+.card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
 }
