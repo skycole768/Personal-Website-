@@ -1,0 +1,50 @@
+.Header{
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.SubText{
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.HomepageWrapper{
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #E8888A, #feb47b);
+    margin: 2vw 15vw;
+    text-align: center;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    animation: moveSideToSide 3s infinite alternate;
+}
+
+.image{
+    border-radius: 25px;
+    width: 100%;
+}
+
+.homepage{
+
+    background-color: #d7f1bb;
+    min-height: 100vh;
+}
+
+.landscape{
+    position: absolute;
+    top: 70vh;
+    width: 100vw;
+    height: 30vh;
+}
+
+@keyframes moveSideToSide {
+    from {
+        transform: translateX(-10vw);
+    }
+    to {
+        transform: translateX(10vw); /* Adjust the value as needed */
+    }
+}
