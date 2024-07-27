@@ -1,0 +1,17 @@
+.repoDisplay {
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .codeDisplay {
+    text-align: center;
+    margin: 0px;
+    width: 60vw;
+  }
+  
+  .repoStructure {
+    text-align: left;
+    width: 60vw;
+  }

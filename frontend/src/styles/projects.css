@@ -1,0 +1,12 @@
+.Projects{
+    background-color: #d7f1bb;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    font-size: 3.5vw;
+    text-shadow: -1.8px -1.8px 0 #feb47b; 
+}

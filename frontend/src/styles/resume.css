@@ -1,0 +1,19 @@
+.iframeContainer {
+    width: 80vw; /* Container width */
+    display: flex;
+    justify-content: center; /* Center iframe inside the container */
+  }
+  
+  .iframe {
+    width: 100%; /* Make iframe take the full width of its container */
+    border: none; /* Remove default border */
+  }
+  .resumeWrappper{
+    color: white;
+    text-shadow: -2px -2px 0 #feb47b;
+    background: linear-gradient(to bottom, #E8888A, #d7f1bb);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+  }

@@ -4,7 +4,7 @@ import HomePage from './components/Homepage'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import About from './components/About'
-import Blog from './components/Blog'
+import Resume from './components/Resume'
 
 const App = () => {
   
@@ -16,7 +16,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/Projects" element={<Projects />} />
             <Route path="/About" element={<About />} />
-            <Route path="/Blog" element={<Blog />} />
+            <Route path="/Resume" element={<Resume />} />
             <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>

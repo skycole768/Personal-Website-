@@ -1,6 +1,9 @@
 import Navbar from "./Navbar";
 import '../styles/homepage.css';
 import compSciCity from '../images/comp-sci-city.jpg'
+import bunny from '../images/bunny.gif'
+import sun from '../images/sun.png'
+import landscape from '../images/landscape.png'
 
 function Homepage(props) {
 
@@ -8,6 +11,7 @@ function Homepage(props) {
     return (
       <div className="homepage">
         <Navbar/>
+        <img src = {sun} alt = "sun" className = "sun"/>
         <div className="HomepageWrapper">
           <div className="column1">
           <h1 className="Header">Welcome to Skyler's Portfolio</h1>
@@ -17,7 +21,8 @@ function Homepage(props) {
           <img className="image" alt="compSciCity"src={compSciCity}/>
           </div>
         </div>
-        <img alt="landscape" className='landscape' src ="https://www.pngkey.com/png/full/765-7653840_euclidean-vector-angle-forest-night-free-frame-clipart.png"/>
+        <img src = {bunny} alt = "bunny" className = "bunny"/>
+        <img alt="landscape" className='landscape' src ={landscape}/>
       </div>
     );
   }

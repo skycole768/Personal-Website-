@@ -10,7 +10,7 @@ function Navbar(props) {
         <Link className="NavLink" to='/'>Home</Link>
         <Link className="NavLink" to='/Projects'>Projects</Link>
         <Link className="NavLink" to='/About'>About Me</Link>
-        <Link className="NavLink" to='/Blog'>Blog</Link>
+        <Link className="NavLink" to='/Resume'>Resume</Link>
         <Link className="NavLink" to='/Contact'>Contact</Link>
       </div>
     );

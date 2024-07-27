@@ -1,0 +1,55 @@
+.card {
+    background: linear-gradient(to bottom, #E8888A, #feb47b);
+    background-color: #E8888A;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vw;
+    border-radius: 10px;
+    padding: 2vw;
+    position: relative;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+  }
+  
+  .cardImage {
+    width: 40vw;
+    max-height: 30vh;
+    border-radius: 15px;
+  }
+  
+  .sourceButton {
+    background-color: white;
+    border-style: none;
+    padding: 1rem;
+    border-radius: 25px;
+    color: #E8888A;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2vw;
+  }
+  
+  .sourceButton:hover {
+    cursor: pointer;
+    color: #feb47b;
+  }
+  
+  .description {
+    position: relative; 
+    width: 50vw;
+    margin: 4vw auto; 
+    font-size: 2vw;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5vw;
+  }
+  
+  .source {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+  }
