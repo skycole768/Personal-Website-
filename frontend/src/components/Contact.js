@@ -3,8 +3,12 @@ import '../styles/contact.css';
 import React, { useState } from 'react';
 import Link from '../images/Link.webp'
 import Mail from '../images/Mail.png'
+import emailjs from 'emailjs-com';
 
 function Contact(props) {
+
+
+  const [status, setStatus] = useState('');
 
   const [formData, setFormData] = useState({
     name: '',
@@ -22,10 +26,29 @@ function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log('Form submitted', formData);
-  };
 
+    const templateParams = {
+      reply_to: formData.email, // Corresponds to {{reply_to}}
+      from_name: formData.name, // Corresponds to {{from_name}}
+      message: formData.message, // Corresponds to {{message}}
+      to_email: 'skyler_coleman123@hotmail.com',
+    };
+
+    emailjs.send('service_aaktvjg', 'template_lhkdc28', templateParams, '1AxYERWBD5NWtU_gV')
+      .then((result) => {
+          console.log('Email successfully sent!', result.text);
+          setStatus('success');
+      }, (error) => {
+          console.error('There was an error sending the email:', error.text);
+          setStatus('error');
+      });
+
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
   
     return (
       <div className="Contact">
@@ -52,6 +75,20 @@ function Contact(props) {
             <h3 className="formHeader">Reach Out To Me!</h3>
             <p className="formSubtext">Have a question about my credentials? Interested in my skills? Or just want to Chat? Reach out anytime!</p>
 
+            {status === 'success' ? (
+            <div className="success-message" style={{marginTop:'18vh'}}>
+              <h3>Message Sent!</h3>
+              <p>Your message has been sent successfully. Would you like to send another message?</p>
+              <button onClick={() => setStatus('')}>Send Another Message</button>
+            </div>
+          ) : status === 'error' ? (
+            <div className="error-message" style={{marginTop:'18vh'}}>
+              <h3>Message Failed</h3>
+              <p>There was a problem sending your message. Please try again.</p>
+              <button onClick={() => setStatus('')}>Try Again</button>
+            </div>
+          ) : (
+            <>
               <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
                   <label htmlFor="name">Name:</label>
@@ -93,6 +130,8 @@ function Contact(props) {
                 
                 <button type="submit">Submit</button>
               </form>
+              </>
+          )}
           </div>
          
         </div>
