@@ -1,36 +1,37 @@
 .NavLink{
     color: white;
-    font-weight: 300;
-    font-size: 1.3vw;
+    font-weight: 600;
+    font-size: 1.5vw;
     text-decoration: None;
     height: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .3vw 1vw;
-    background-color: #b9cda3;
-    border-radius: 35px;
+    padding: 1.5vh 1vw;
+    background-color: transparent;
     width: 10vw;
 
 }
 
-.NavLink:hover{
-    font-weight: 500;
-    background-color: white;
-    color: #feb47b;
+.NavLink.active{
+    color: black;
 }
 
-
-
-
+.NavLink:hover{
+    background-color: transparent;
+    color: black;
+}
 
 .navbar {
+    top: 0;
+    z-index: 10;
+    position: sticky;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: #fff;
     padding: 2vw 0vw;
-    background-color: #c1d8a9;
-    height: 2vw;
+    background-color:#F08080;
+    opacity: .9;
+    height: 3vh;
     width: 100vw;
   }

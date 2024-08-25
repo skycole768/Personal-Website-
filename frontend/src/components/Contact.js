@@ -1,11 +1,10 @@
-import Navbar from "./Navbar";
 import '../styles/contact.css';
 import React, { useState } from 'react';
 import Link from '../images/Link.webp'
 import Mail from '../images/Mail.png'
 import emailjs from 'emailjs-com';
 
-function Contact(props) {
+const Contact = React.forwardRef((props, ref) => {
 
 
   const [status, setStatus] = useState('');
@@ -51,25 +50,25 @@ function Contact(props) {
   };
   
     return (
-      <div className="Contact">
-        <Navbar/>
+      <div className="Contact" ref={ref}>
+        <div className='contactWrapper'>
         <div className="contactHeadWrapper">
         <h1 className="contactHeader">Get in Touch</h1>
         </div>
         <div className="grid">
           <div className="contactColumn1">
             <div className="mail">
-            <img src = {Mail} alt = "mail" className="contactItem"/>
-            <div className="mailWrapper">
-              <a className="mailItem" href="mailto:Spc69655@uga.edu">Spc69655@uga.edu</a>
-              <a className="mailItem" href="mailto:Skyler_coleman123@hotmail.com" >Skyler_coleman123@hotmail.com</a>
+              <img src = {Mail} alt = "mail" className="contactItem"/>
+              <div className="mailWrapper">
+                <a className="mailItem" href="mailto:Spc69655@uga.edu">Spc69655@uga.edu</a>
+                <a className="mailItem" href="mailto:Skyler_coleman123@hotmail.com" >Skyler_coleman123@hotmail.com</a>
+              </div>
             </div>
-          </div>
-          <div className="LinkedIn">
-          <img src = {Link} alt = "Linkedin" className="contactItem"/>
-          <a className="linkItem" href="https://www.linkedin.com/in/skyler-coleman-16b417238" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/skyler-coleman-16b417238</a>
-          </div>
-          </div>
+            <div className="linkedIn">
+              <img src = {Link} alt = "Linkedin" className="contactItem"/>
+              <a className="linkItem" href="https://www.linkedin.com/in/skyler-coleman-16b417238" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/skyler-coleman-16b417238</a>
+            </div>
+         </div>
 
           <div className="contactColumn2">
             <h3 className="formHeader">Reach Out To Me!</h3>
@@ -85,10 +84,10 @@ function Contact(props) {
             <div className="error-message" style={{marginTop:'18vh'}}>
               <h3>Message Failed</h3>
               <p>There was a problem sending your message. Please try again.</p>
-              <button onClick={() => setStatus('')}>Try Again</button>
+              <button className = "formButton" onClick={() => setStatus('')}>Try Again</button>
             </div>
           ) : (
-            <>
+            <div className='form'>
               <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
                   <label htmlFor="name">Name:</label>
@@ -130,13 +129,20 @@ function Contact(props) {
                 
                 <button type="submit">Submit</button>
               </form>
-              </>
+            </div>
           )}
           </div>
          
         </div>
+        </div>
+        <div className='copyRight'>
+          Skyler Coleman &copy; 2024
+          <a href="https://github.com/skycole768" target="_blank" rel="noreferrer">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="30"/>
+          </a>
+        </div>
       </div>
     );
-  }
+  })
   
   export default Contact;

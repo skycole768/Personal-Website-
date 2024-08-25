@@ -1,21 +1,74 @@
 .Contact{
-    background-image: url('https://wallpaperaccess.com/full/4065764.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  overflow: auto;
+  min-height: fit-content;
+
+}
+
+.copyRight{
+  height: 9.75vh;
+  background-color: #F08080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+.copyRight img {
+  border-radius: 50px;
+  width: 30px;
+  height: auto;
+  margin-left: 2vw;
 }
 
 
+.contactWrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%; /* Adjust based on how much of the top you want to fade */
+  background: linear-gradient(to bottom, rgba(215, 241, 187, 1) 0%, rgba(215, 241, 187, 0) 100%);
+  pointer-events: none; /* Ensures the overlay doesn't interfere with interactions */
+  z-index: 1; /* Ensure the gradient overlay sits on top of the background image */
+}
+
+.contactWrapper {
+  position: relative; /* Necessary for the absolute positioning of the ::before element */
+  background-image: url('../images/greenery.webp');
+  padding-top: 10vh;
+  min-height: 80vh;
+  padding-bottom: 2vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Prevents any overflow from the pseudo-element */
+}
+.contactHeader{
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 3.5vw;
+  font-weight: 900;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 4vh;
+  margin-top: 0;
+}
+
 .contactItem{
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: auto;
     display: inline-block;
 }
 
 .linkItem{
     position: relative;
-    top: -2vw;
+    margin-top: 5vh;
+    width: 30vw;
 }
 
 a{
@@ -32,56 +85,51 @@ a{
     margin-left: 2vw;
     display: inline-block;
     font-size: 1.2rem;
-    font-weight: 400;
-}
-
-
-
-.contactHeader{
-    color: white;
-    font-size: 3.5vw;
-    font-weight: 900;
-    align-content: center;
-    text-align: center;
-    margin: 1vw 0;
-    text-shadow: -1.8px -1.8px 0 #E8888A;
-}
-
-.mail,.LinkedIn{
-    position: relative;
-    top: 16vh;
-    margin: 2.5vw 0vw;
+    font-weight: 500;
 }
 
 .contactColumn2{
     position: relative;
-    left: 5vw;
+    box-sizing: border-box;
+    left: 1vw;
     color: white;
     text-align: center;
     width: 40vw;
-    height: 73vh;
-    background-color: #E8888A;
-    border: 1vw solid #feb47b;
-    
+    padding: .5vh 2vw;
+    height: fit-content;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #feb47b, #F08080);
 }
-.contactColumn1{
+  .contactColumn1,.contactColumn2{
     position: relative;
-    left: 8vw;
+    z-index: 2;
+  }
+
+.contactColumn1{
+    display: block;
+    position: relative;
+    width: 40vw;
+    height: fit-content;
+    margin: auto;
+}
+
+.column1Wrapper{
+  margin: auto;
+  width: 100%;
 }
 
 .formHeader{
     font-size: 2.5rem;
     margin: .5vw auto;
     font-weight: 600;
-    text-shadow: -1.8px -1.8px 0 #feb47b;
 }
 
 .formSubtext{
-    font-weight: 400;
+    font-weight: 600;
     width: 35vw;
     font-size: 1.2rem;
     margin: 0vw auto;
-    text-shadow: -1.8px -1.8px 0 #feb47b;
+    padding-bottom: 1vw;
 }
 
 .grid{
@@ -92,7 +140,6 @@ grid-template-columns: 1fr 1fr;
 .contact-form {
     position: relative;
     max-width: 35vw;
-    max-height: 50vh;
     margin: .5vw auto;
     padding: 2vw;
     background-color: #f9f9f9;
@@ -101,7 +148,7 @@ grid-template-columns: 1fr 1fr;
   }
   
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: .5vh;
   }
   
   .form-group label {
@@ -109,6 +156,7 @@ grid-template-columns: 1fr 1fr;
     margin-bottom: 5px;
     font-weight: bold;
   }
+  
   
   .form-group input,
   .form-group textarea {
@@ -121,19 +169,88 @@ grid-template-columns: 1fr 1fr;
   
   .form-group textarea {
     resize: vertical; /* Allow vertical resizing only */
-    height: 150px; /* Adjust height as needed */
+    min-height: 12vh;
   }
   
   button {
-    padding: 10px 20px;
+    padding: 1vh 2vw;
     border: none;
-    border-radius: 4px;
-    background-color: #007bff;
+    border-radius: 5px;
+    background-color: #F08080;
     color: white;
     font-size: 16px;
     cursor: pointer;
   }
+
+  .mail, .linkedIn{
+    display: block;
+  }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: #F08080;
+  }
+
+  @media (max-width: 850px) {
+
+    .grid{
+      display: flex;
+      flex-direction: column-reverse; /* Adjust row height as needed */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .linkItem{
+        width: 60vw;
+        margin-top: 0;
+      }
+
+      .contactItem{
+        margin-right: 4vw;
+        width: 11vw;
+        height: 8vw;
+      }
+
+      .mailItem, .linkItem{
+        text-align: left;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .linkedIn{
+      margin-top: 3vh;
+    }
+
+    .mail, .linkedIn{
+      display: flex;
+      align-items: center;
+    }
+    .contactColumn1{
+      width: fit-content;
+    }
+
+    .contactHeader{
+      margin-bottom: 6vh;
+    }
+    .contactColumn2{
+      margin-bottom: 10vh;
+      width: 80vw;
+      padding-bottom: 1.5vh;
+    }
+    .formSubtext{
+      font-size: .7rem;
+      width: 70vw;
+    }
+    .formHeader{
+      font-size: 1.0rem;
+      font-weight: bold;
+    }
+
+    .contact-form{
+      max-width: 60vw;
+    }
+
+    .form-group textarea{
+      min-height: 8vh;
+    }
+
   }

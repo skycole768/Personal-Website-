@@ -1,28 +1,57 @@
 import Navbar from "./Navbar";
-import '../styles/homepage.css';
-import compSciCity from '../images/comp-sci-city.jpg'
-import bunny from '../images/bunny.gif'
-import sun from '../images/sun.png'
-import landscape from '../images/landscape.png'
+import Landing from "./Landing";
+import Projects from "./Projects";
+import Resume from "./Resume";
+import About from "./About";
+import Contact from "./Contact";
+import "../styles/homepage.css"
+import React, {useRef, useState, useEffect} from 'react'
 
 function Homepage(props) {
+  const projectsRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const resumeRef = useRef(null);
+  const homeRef = useRef(null);
+  const [activeSection, setActiveSection] = useState("home");
 
-  
+  useEffect(() => {
+    const sections = [
+      { name: 'home', ref: homeRef },
+      { name: 'projects', ref: projectsRef },
+      { name: 'resume', ref: resumeRef },
+      { name: 'about', ref: aboutRef },
+      { name: 'contact', ref: contactRef }
+    ];
+    
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      sections.forEach(section => {
+        const { offsetTop, offsetHeight } = section.ref.current;
+        if (scrollPosition >= offsetTop && scrollPosition <= offsetTop + offsetHeight) {
+          setActiveSection(section.name);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call it initially to set the correct section
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [homeRef, projectsRef, resumeRef, aboutRef, contactRef]);
+    
     return (
       <div className="homepage">
-        <Navbar/>
-        <img src = {sun} alt = "sun" className = "sun"/>
-        <div className="HomepageWrapper">
-          <div className="column1">
-          <h1 className="Header">Welcome to Skyler's Portfolio</h1>
-          <h3 className="SubText">Documentation of a young up and coming software engineer. <strong>Stay Tuned!</strong></h3>
-          </div>
-          <div className="column2">
-          <img className="image" alt="compSciCity"src={compSciCity}/>
-          </div>
-        </div>
-        <img src = {bunny} alt = "bunny" className = "bunny"/>
-        <img alt="landscape" className='landscape' src ={landscape}/>
+        <Landing ref={homeRef} projectsRef={projectsRef}/>
+        <div className="seperater"></div>
+        <Navbar projectsRef = {projectsRef} resumeRef={resumeRef} aboutRef={aboutRef} contactRef={contactRef} homeRef={homeRef} activeSection={activeSection}/>
+        <Projects ref ={projectsRef} contactRef={contactRef}/>
+        <Resume ref ={resumeRef}/>
+        <About ref ={aboutRef}/>
+        <Contact ref ={contactRef}/>
       </div>
     );
   }

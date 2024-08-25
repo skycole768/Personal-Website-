@@ -1,12 +1,14 @@
 .Projects{
-    background-color: #d7f1bb;
+    background-color: rgb(8, 28, 43);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    padding-top: 8vh;
 }
 
 .header{
-    font-size: 3.5vw;
-    text-shadow: -1.8px -1.8px 0 #feb47b; 
+    font-size: 4vw;
+    margin-bottom: 5vw;
 }

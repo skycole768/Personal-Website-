@@ -1,15 +1,14 @@
 .moreAbout{
-    font-size: 1.8rem;
-    color: #E8888A;
-    text-shadow: -1px -1px 0 #feb47b;
+    font-size: 2vw;
+    font-weight: 500;
     width: 60vw;
     padding: 3vw;
-    border: 2vw solid #feb47b;
+    border: .5vw solid #F08080;
 }
 .me{
     width: 20vw;
     border-radius: 50%;
-    border: .5vw solid #E8888A;
+    border: .325vw solid #F08080;
 
 }
 .about{
@@ -18,27 +17,27 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #d7f1bb;
+    background: linear-gradient(to bottom, white, #d7f1bb);
     height: fit-content;
+    padding-top: 10vh;
 }
 .aboutHr{
     border: 0; /* Remove default border */
     height: 4px; /* Set the height of the <hr> */
-    background: #E8888A; /* Gradient background */
+    background: #F08080;
     margin: 8vh;
   }
 
 .aboutHeader{
-    font-size: 3.5rem;
-    color: #feb47b;
-    text-shadow: -2px -2px 0 #E8888A;
+    font-size: 4vw;
 }
 .aboutWrapper{
+    color: white;
     border-radius: 20px;
     padding: .5vw 2vw;
-    background-color: white;
+    background-color: rgb(8, 28, 43);
+    
     margin: 5vw 5vw;
-    border: .5vw solid #E8888A;
 }
 
 .aboutImg{
@@ -69,3 +68,4 @@
         transform: translateX(-50%);
     }
 }
+  
