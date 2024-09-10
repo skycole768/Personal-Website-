@@ -10,6 +10,23 @@ const Projects = React.forwardRef((props, ref) => {
 
   const projects = [
     { 
+      title: 'Olea Mpox Health Platform',
+      description:
+        "Olea Mpox Health Support Platform is a comprehensive web application designed to provide multilingual health support for Mpox. Developed using Next.js, hosted on AWS EC2 and Vercel, this scalable platform integrates advanced technologies to deliver 24/7 assistance.<br><br>" +
+        "• OpenAI GPT-3.5: Powers the chatbot to offer intelligent and context-aware responses to user inquiries about Mpox, ensuring accurate and relevant information.<br>" +
+        "• Google API: Used to provide an interactive map that helps users locate nearby clinics for Mpox-related care.<br>" +
+        "• MUI: Framework for creating a responsive and user-friendly interface that enhances the overall user experience.<br><br>" +
+        "As the project lead, I managed a team of four using Scrum agile methodology to ensure efficient development and effective collaboration.<br><br>" +
+        "Key Features:<br>" +
+        "• 24/7 Multilingual Support: Offers continuous assistance in multiple languages to cater to a diverse user base.<br>" +
+        "• Interactive Map: Provides users with an easy-to-use map for finding nearby clinics and healthcare facilities.<br>" +
+        "• Scalable Design: Built to handle a growing number of users and interactions efficiently.<br><br>" +
+        "This project demonstrates a commitment to leveraging advanced AI and technology to improve access to Mpox healthcare, while effectively managing a development team and utilizing modern deployment strategies.",
+      imageUrl: 'YOUR_IMAGE_URL_HERE',  // Replace with the actual image path or URL
+      owner: 'skycole768',       // Replace with your GitHub username if applicable
+      repo: 'Mpox_Chatbot'
+    },
+    { 
       title: 'FindTune',
       description:
         "FindTune is an innovative React application designed to enhance music discovery through voice recordings. Users can record their voice using a simple interface, and the app leverages advanced AI technologies to find and recommend songs that match the recorded content.<br><br>" +
@@ -43,6 +60,24 @@ const Projects = React.forwardRef((props, ref) => {
       imageUrl: 'YOUR_IMAGE_URL_HERE',  // Replace with the actual image path or URL
       owner: 'sufyan360',       // Replace with your GitHub username if applicable
       repo: 'AI_Customer_Support'
+    
+    },
+     { 
+      title: 'Check my Professor',
+      description:
+    "Professor Recommendation Chatbot is an interactive web application built with Next.js, designed to provide personalized professor recommendations based on user input. Utilizing Pinecone API and OpenAI GPT-3.5 Turbo, this application offers accurate and context-aware suggestions from a curated database.<br><br>" +
+    "• OpenAI GPT-3.5 Turbo: Used for interpreting user preferences and generating relevant queries, ensuring intelligent and context-aware recommendations.<br>" +
+    "• Pinecone API: Facilitates efficient and precise searching within a vector database of professor profiles, providing fast and accurate results.<br>" +
+    "• Next.js: Framework utilized for developing a responsive and user-friendly frontend interface.<br><br>" +
+    "As the project lead, I managed a team of four using Scrum agile methodology to ensure effective collaboration and timely delivery.<br><br>" +
+    "Key Features:<br>" +
+    "• Personalized Recommendations: Provides tailored suggestions based on user descriptions of their ideal professor.<br>" +
+    "• Efficient Search: Employs Pinecone API to quickly locate matching professor profiles from a detailed database.<br>" +
+    "• User-Friendly Interface: Built with Next.js to offer a smooth and engaging user experience.<br><br>" +
+    "This project highlights the integration of advanced AI technologies to enhance the process of finding ideal academic mentors, demonstrating leadership in managing development and utilizing modern technology solutions.",
+      imageUrl: 'YOUR_IMAGE_URL_HERE',  // Replace with the actual image path or URL
+      owner: 'sufyan360',       // Replace with your GitHub username if applicable
+      repo: 'professor_check'
     
     },
     { 
