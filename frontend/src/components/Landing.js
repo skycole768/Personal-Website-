@@ -131,8 +131,8 @@ const Landing = React.forwardRef((props, ref) => {
         </div>
         <div className ="homeBottomContainer">
           <img src={sun} alt ="sun" className = "sun"/>
-          <div className = 'bunnyContainer'>
-            <img onClick = {handleBunny} src = {bunny} alt = "bunny" className = "bunny"/>
+          <div onClick = {handleBunny} className = 'bunnyContainer'>
+            <img src = {bunny} alt = "bunny" className = "bunny"/>
             <p  className='dialouge'>
               {bunnyText}
             </p>
